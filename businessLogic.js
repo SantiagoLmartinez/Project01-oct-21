@@ -1,17 +1,22 @@
 //aqui programaremos objetos y funcionabilidad del sistema
 
 //creamos una variable para recorrer toda la lista de personas en un arreglo
-var personList = [];
+let personList = [];
 
 //creamos funcion para agregar personas a la lista
-function addPersonToSystem(pid, pname, pbirthday, pemail) {
+function addPersonToSystem(pId, pName, pBirthday, pEmail) {
 
-    var newFriend = {
+    var newPerson= {
         id: pId,
         name: pName,
         birthday: pBirthday,
         email: pEmail
     };
-    console.log(newFriend);
-    personList.push(newFriend);
+    console.log(newPerson);
+    personList.push(newPerson);
+}
+
+//creamos funcion que nos devuelve la lista de amigos  
+function getPersonList(){
+return personList;
 }
